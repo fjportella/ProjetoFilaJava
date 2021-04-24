@@ -57,6 +57,7 @@ public class FilaCalc_v3 {
         }
     }
 
+    //insere elementos na fila desde que não esteja cheia
     public void insere(String nome) {
         if (!this.cheia()) {
             this.nome[contador] = nome;
@@ -68,6 +69,7 @@ public class FilaCalc_v3 {
 
     }
 
+    //remove elementos na fila
     public void remove() {
         if (this.vazia()) {
             System.out.println("Fila vazia");
@@ -85,6 +87,7 @@ public class FilaCalc_v3 {
         }
     }
 
+    //permite inserir elementos na fila na posição escolhida
     public void furafila(int posicao, String nome) {
         // este método fica para vocês implementarem
         if (!this.cheia()) {
@@ -107,6 +110,7 @@ public class FilaCalc_v3 {
 
     }
     
+    //permite informar em que posição da fila será retirado o elemento
     public void desiste(int posicaod){
         if (this.vazia()) {
             System.out.println("Fila vazia");
@@ -124,6 +128,7 @@ public class FilaCalc_v3 {
         }          
     }
     
+    //mostra as posições ocupadas e livre da fila
     public void mostralivre() {
         if (this.vazia()) {
             System.out.println("Fila vazia");
